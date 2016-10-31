@@ -14,6 +14,8 @@
 		B6D6F3791DC6ED72002AD0CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D6F3771DC6ED72002AD0CC /* Main.storyboard */; };
 		B6D6F37B1DC6ED72002AD0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D6F37A1DC6ED72002AD0CC /* Assets.xcassets */; };
 		B6D6F37E1DC6ED72002AD0CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D6F37C1DC6ED72002AD0CC /* LaunchScreen.storyboard */; };
+		B6D6F38D1DC6FDA2002AD0CC /* GPUImageFaceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6F38C1DC6FDA2002AD0CC /* GPUImageFaceFilter.m */; };
+		B6D6F3901DC6FE03002AD0CC /* GPUImageGrayFaceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6F38F1DC6FE03002AD0CC /* GPUImageGrayFaceFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,11 @@
 		B6D6F37A1DC6ED72002AD0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6D6F37D1DC6ED72002AD0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6D6F37F1DC6ED72002AD0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D6F3891DC6FC4A002AD0CC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B6D6F38B1DC6FDA2002AD0CC /* GPUImageFaceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageFaceFilter.h; sourceTree = "<group>"; };
+		B6D6F38C1DC6FDA2002AD0CC /* GPUImageFaceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageFaceFilter.m; sourceTree = "<group>"; };
+		B6D6F38E1DC6FE03002AD0CC /* GPUImageGrayFaceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageGrayFaceFilter.h; sourceTree = "<group>"; };
+		B6D6F38F1DC6FE03002AD0CC /* GPUImageGrayFaceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageGrayFaceFilter.m; sourceTree = "<group>"; };
 		FE77906339327FBE21DA8E8C /* Pods-TemplateGPUImageVideoCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateGPUImageVideoCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TemplateGPUImageVideoCamera/Pods-TemplateGPUImageVideoCamera.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +72,7 @@
 		B6D6F36D1DC6ED72002AD0CC /* TemplateGPUImageVideoCamera */ = {
 			isa = PBXGroup;
 			children = (
+				B6D6F38A1DC6FD8B002AD0CC /* GPUImage */,
 				B6D6F3711DC6ED72002AD0CC /* AppDelegate.h */,
 				B6D6F3721DC6ED72002AD0CC /* AppDelegate.m */,
 				B6D6F3741DC6ED72002AD0CC /* ViewController.h */,
@@ -82,8 +90,20 @@
 			isa = PBXGroup;
 			children = (
 				B6D6F36F1DC6ED72002AD0CC /* main.m */,
+				B6D6F3891DC6FC4A002AD0CC /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6D6F38A1DC6FD8B002AD0CC /* GPUImage */ = {
+			isa = PBXGroup;
+			children = (
+				B6D6F38B1DC6FDA2002AD0CC /* GPUImageFaceFilter.h */,
+				B6D6F38C1DC6FDA2002AD0CC /* GPUImageFaceFilter.m */,
+				B6D6F38E1DC6FE03002AD0CC /* GPUImageGrayFaceFilter.h */,
+				B6D6F38F1DC6FE03002AD0CC /* GPUImageGrayFaceFilter.m */,
+			);
+			name = GPUImage;
 			sourceTree = "<group>";
 		};
 		D90BFF01ABDA001028D9EE62 /* Frameworks */ = {
@@ -226,8 +246,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6D6F3761DC6ED72002AD0CC /* ViewController.m in Sources */,
+				B6D6F3901DC6FE03002AD0CC /* GPUImageGrayFaceFilter.m in Sources */,
 				B6D6F3731DC6ED72002AD0CC /* AppDelegate.m in Sources */,
 				B6D6F3701DC6ED72002AD0CC /* main.m in Sources */,
+				B6D6F38D1DC6FDA2002AD0CC /* GPUImageFaceFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +305,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = TemplateGPUImageVideoCamera/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -328,6 +351,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = TemplateGPUImageVideoCamera/PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

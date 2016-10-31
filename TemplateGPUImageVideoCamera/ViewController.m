@@ -1,5 +1,6 @@
 #import "ViewController.h"
 #import <GPUImage/GPUImage.h>
+#import "GPUImageGrayFaceFilter.h"
 
 #define CAMERA_W 720.0
 #define CAMERA_H 1280.0
@@ -14,6 +15,7 @@ AVCaptureMetadataOutputObjectsDelegate>
 @property (nonatomic, strong) GPUImageMovieWriter *movieWriter;
 @property (nonatomic, strong) AVCaptureMetadataOutput *metadataOutput;
 @property (nonatomic, strong) NSArray *metadataList;
+@property (nonatomic, strong) GPUImageGrayFaceFilter *filter;
 @end
 
 @implementation ViewController
@@ -93,15 +95,16 @@ AVCaptureMetadataOutputObjectsDelegate>
 - (void)setupFilter{
   
   /*何かしらフィルタ*/
-  GPUImageFilter *imageFilter = [GPUImageFilter new];
+  GPUImageGrayFaceFilter *filter = [GPUImageGrayFaceFilter new];
   
-  [imageFilter removeAllTargets];
+  [filter removeAllTargets];
   [self.videoCamera removeAllTargets];
   
-  [self.videoCamera addTarget:imageFilter];
+  [self.videoCamera addTarget:filter];
   if (self.previewView) {
-    [imageFilter addTarget:self.previewView];
+    [filter addTarget:self.previewView];
   }
+  _filter = filter;
 }
 
 
@@ -157,7 +160,8 @@ AVCaptureMetadataOutputObjectsDelegate>
   
   _running = YES;
   
-  CMTime time = CMSampleBufferGetPresentationTimeStamp(sampleBuffer);
+  //時間を取得
+//  CMTime time = CMSampleBufferGetPresentationTimeStamp(sampleBuffer);
   
   /*生の画像を取得*/
   CVPixelBufferRef pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
@@ -165,9 +169,20 @@ AVCaptureMetadataOutputObjectsDelegate>
   CIImage* convertedImage = [[CIImage alloc] initWithCVPixelBuffer:pixelBuffer options:(__bridge NSDictionary *)attachments];
   CFRelease(attachments);
   
-   NSArray *features = nil;
+  /*metadataを使って処理*/
   @synchronized (self) {
+    DLog(@"metadata = %@", _metadataList);
+    NSMutableArray *faceList = @[].mutableCopy;
     /*生の画像とmetadataから色々処理*/
+    for (AVMetadataFaceObject *f in _metadataList) {
+      float x = f.bounds.origin.x;
+      float y = f.bounds.origin.y;
+      float w = f.bounds.size.width;
+      float h = f.bounds.size.height;
+      //縦横が90度違う
+      [faceList addObject:[NSValue valueWithCGRect:(CGRect){y,x,h,w}]];
+    }
+    [_filter setFaceRectList:faceList];
   }
   
   _running = NO;
