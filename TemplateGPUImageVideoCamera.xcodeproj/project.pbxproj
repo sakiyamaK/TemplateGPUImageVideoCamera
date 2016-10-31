@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		251574046719305987313DE3 /* Pods_TemplateGPUImageVideoCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867E285D29C338D5923C8B65 /* Pods_TemplateGPUImageVideoCamera.framework */; };
+		B6D6F3701DC6ED72002AD0CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6F36F1DC6ED72002AD0CC /* main.m */; };
+		B6D6F3731DC6ED72002AD0CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6F3721DC6ED72002AD0CC /* AppDelegate.m */; };
+		B6D6F3761DC6ED72002AD0CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6F3751DC6ED72002AD0CC /* ViewController.m */; };
+		B6D6F3791DC6ED72002AD0CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D6F3771DC6ED72002AD0CC /* Main.storyboard */; };
+		B6D6F37B1DC6ED72002AD0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D6F37A1DC6ED72002AD0CC /* Assets.xcassets */; };
+		B6D6F37E1DC6ED72002AD0CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D6F37C1DC6ED72002AD0CC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29B93B230ADA22A32E6B068C /* Pods-TemplateGPUImageVideoCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateGPUImageVideoCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-TemplateGPUImageVideoCamera/Pods-TemplateGPUImageVideoCamera.release.xcconfig"; sourceTree = "<group>"; };
+		867E285D29C338D5923C8B65 /* Pods_TemplateGPUImageVideoCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemplateGPUImageVideoCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D6F36B1DC6ED72002AD0CC /* TemplateGPUImageVideoCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateGPUImageVideoCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D6F36F1DC6ED72002AD0CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6D6F3711DC6ED72002AD0CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6D6F3721DC6ED72002AD0CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6D6F3741DC6ED72002AD0CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B6D6F3751DC6ED72002AD0CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B6D6F3781DC6ED72002AD0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6D6F37A1DC6ED72002AD0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6D6F37D1DC6ED72002AD0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6D6F37F1DC6ED72002AD0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE77906339327FBE21DA8E8C /* Pods-TemplateGPUImageVideoCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateGPUImageVideoCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TemplateGPUImageVideoCamera/Pods-TemplateGPUImageVideoCamera.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6D6F3681DC6ED72002AD0CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251574046719305987313DE3 /* Pods_TemplateGPUImageVideoCamera.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6D6F3621DC6ED72002AD0CC = {
+			isa = PBXGroup;
+			children = (
+				B6D6F36D1DC6ED72002AD0CC /* TemplateGPUImageVideoCamera */,
+				B6D6F36C1DC6ED72002AD0CC /* Products */,
+				EF468A9113416EACC322383A /* Pods */,
+				D90BFF01ABDA001028D9EE62 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B6D6F36C1DC6ED72002AD0CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6D6F36B1DC6ED72002AD0CC /* TemplateGPUImageVideoCamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6D6F36D1DC6ED72002AD0CC /* TemplateGPUImageVideoCamera */ = {
+			isa = PBXGroup;
+			children = (
+				B6D6F3711DC6ED72002AD0CC /* AppDelegate.h */,
+				B6D6F3721DC6ED72002AD0CC /* AppDelegate.m */,
+				B6D6F3741DC6ED72002AD0CC /* ViewController.h */,
+				B6D6F3751DC6ED72002AD0CC /* ViewController.m */,
+				B6D6F3771DC6ED72002AD0CC /* Main.storyboard */,
+				B6D6F37A1DC6ED72002AD0CC /* Assets.xcassets */,
+				B6D6F37C1DC6ED72002AD0CC /* LaunchScreen.storyboard */,
+				B6D6F37F1DC6ED72002AD0CC /* Info.plist */,
+				B6D6F36E1DC6ED72002AD0CC /* Supporting Files */,
+			);
+			path = TemplateGPUImageVideoCamera;
+			sourceTree = "<group>";
+		};
+		B6D6F36E1DC6ED72002AD0CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6D6F36F1DC6ED72002AD0CC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D90BFF01ABDA001028D9EE62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				867E285D29C338D5923C8B65 /* Pods_TemplateGPUImageVideoCamera.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF468A9113416EACC322383A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE77906339327FBE21DA8E8C /* Pods-TemplateGPUImageVideoCamera.debug.xcconfig */,
+				29B93B230ADA22A32E6B068C /* Pods-TemplateGPUImageVideoCamera.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6D6F36A1DC6ED72002AD0CC /* TemplateGPUImageVideoCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D6F3821DC6ED72002AD0CC /* Build configuration list for PBXNativeTarget "TemplateGPUImageVideoCamera" */;
+			buildPhases = (
+				961416BE11E41D0177DD218E /* [CP] Check Pods Manifest.lock */,
+				B6D6F3671DC6ED72002AD0CC /* Sources */,
+				B6D6F3681DC6ED72002AD0CC /* Frameworks */,
+				B6D6F3691DC6ED72002AD0CC /* Resources */,
+				10EA2FC7E0D518C466147C37 /* [CP] Embed Pods Frameworks */,
+				843EC42B93F590805F700EC3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TemplateGPUImageVideoCamera;
+			productName = TemplateGPUImageVideoCamera;
+			productReference = B6D6F36B1DC6ED72002AD0CC /* TemplateGPUImageVideoCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6D6F3631DC6ED72002AD0CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = sakiyamaK;
+				TargetAttributes = {
+					B6D6F36A1DC6ED72002AD0CC = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B6D6F3661DC6ED72002AD0CC /* Build configuration list for PBXProject "TemplateGPUImageVideoCamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6D6F3621DC6ED72002AD0CC;
+			productRefGroup = B6D6F36C1DC6ED72002AD0CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6D6F36A1DC6ED72002AD0CC /* TemplateGPUImageVideoCamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6D6F3691DC6ED72002AD0CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D6F37E1DC6ED72002AD0CC /* LaunchScreen.storyboard in Resources */,
+				B6D6F37B1DC6ED72002AD0CC /* Assets.xcassets in Resources */,
+				B6D6F3791DC6ED72002AD0CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10EA2FC7E0D518C466147C37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TemplateGPUImageVideoCamera/Pods-TemplateGPUImageVideoCamera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		843EC42B93F590805F700EC3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TemplateGPUImageVideoCamera/Pods-TemplateGPUImageVideoCamera-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		961416BE11E41D0177DD218E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6D6F3671DC6ED72002AD0CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D6F3761DC6ED72002AD0CC /* ViewController.m in Sources */,
+				B6D6F3731DC6ED72002AD0CC /* AppDelegate.m in Sources */,
+				B6D6F3701DC6ED72002AD0CC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6D6F3771DC6ED72002AD0CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D6F3781DC6ED72002AD0CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6D6F37C1DC6ED72002AD0CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D6F37D1DC6ED72002AD0CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6D6F3801DC6ED72002AD0CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B6D6F3811DC6ED72002AD0CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6D6F3831DC6ED72002AD0CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE77906339327FBE21DA8E8C /* Pods-TemplateGPUImageVideoCamera.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TemplateGPUImageVideoCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sakiyamaK.TemplateGPUImageVideoCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6D6F3841DC6ED72002AD0CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29B93B230ADA22A32E6B068C /* Pods-TemplateGPUImageVideoCamera.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TemplateGPUImageVideoCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sakiyamaK.TemplateGPUImageVideoCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6D6F3661DC6ED72002AD0CC /* Build configuration list for PBXProject "TemplateGPUImageVideoCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D6F3801DC6ED72002AD0CC /* Debug */,
+				B6D6F3811DC6ED72002AD0CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D6F3821DC6ED72002AD0CC /* Build configuration list for PBXNativeTarget "TemplateGPUImageVideoCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D6F3831DC6ED72002AD0CC /* Debug */,
+				B6D6F3841DC6ED72002AD0CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6D6F3631DC6ED72002AD0CC /* Project object */;
+}
