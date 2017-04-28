@@ -59,37 +59,12 @@ AVCaptureMetadataOutputObjectsDelegate>
 -(void)setupCameraWithSessionPreset:(NSString*)sessionPreset withPosition:(AVCaptureDevicePosition)position{
   
   GPUImageVideoCamera *videoCamera = [[GPUImageVideoCamera alloc] initWithSessionPreset:sessionPreset cameraPosition:position];
-  //  videoCamera.outputImageOrientation = UIInterfaceOrientationPortrait;
-  //  videoCamera.horizontallyMirrorFrontFacingCamera = YES;
-  //  videoCamera.horizontallyMirrorRearFacingCamera = NO;
+    videoCamera.outputImageOrientation = UIInterfaceOrientationPortrait;
+    videoCamera.horizontallyMirrorFrontFacingCamera = YES;
+    videoCamera.horizontallyMirrorRearFacingCamera = NO;
   videoCamera.delegate = self;
   self.videoCamera = videoCamera;
   [videoCamera addTarget:self.previewView];
-  
-  AVCaptureSession *session = videoCamera.captureSession;
-  
-  // カメラの向きとかを設定する
-  //videoCamera.outputImageOrientationで向きを指定すると
-  //- (void)willOutputSampleBuffer:(CMSampleBufferRef)sampleBufferで正しい向きがとれない
-  [session beginConfiguration];
-  
-  AVCaptureConnection *videoConnection = nil;
-  for(AVCaptureVideoDataOutput *dataOutput in session.outputs){
-    for ( AVCaptureConnection *connection in [dataOutput connections] ){
-      for ( AVCaptureInputPort *port in [connection inputPorts] ){
-        if ( [[port mediaType] isEqual:AVMediaTypeVideo] ){
-          videoConnection = connection;
-        }
-      }
-    }
-  }
-  
-  if([videoConnection isVideoOrientationSupported]){
-    videoConnection.videoOrientation = AVCaptureVideoOrientationPortrait;
-    videoConnection.videoMirrored = (position == AVCaptureDevicePositionFront);
-  }
-  
-  [session commitConfiguration];
 }
 
 - (void)setupFilter{
